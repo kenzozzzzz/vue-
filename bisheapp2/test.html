@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    11
+</body>
+<script>
+    var iArray = [];
+    function getRandom(){
+        var iChoice = 91;
+        console.log(Math.random()*91 +10 );
+    }
+    //Math.random()就是获取 0-1 之间的随机数（永远获取不到 1）
+    for (var i = 0; i < 10; i++) {
+        var result = getRandom(10, 100);
+        iArray.push(result);
+    }
+    iArray.sort();
+    console.log(iArray);
+
+</script>
+
+</html>
